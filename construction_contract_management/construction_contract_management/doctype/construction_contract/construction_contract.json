@@ -1,0 +1,133 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "autoname": "field:contract_number",
+  "creation": "2023-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "contract_number",
+    "project_reference",
+    "contractor_reference",
+    "start_date",
+    "end_date",
+    "contract_value",
+    "payment_terms",
+    "milestones",
+    "status",
+    "contractor_signature",
+    "client_signature",
+    "signature_date"
+  ],
+  "fields": [
+    {
+      "fieldname": "contract_number",
+      "fieldtype": "Data",
+      "label": "Contract Number",
+      "read_only": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "project_reference",
+      "fieldtype": "Link",
+      "label": "Project Reference",
+      "options": "Project",
+      "reqd": 1
+    },
+    {
+      "fieldname": "contractor_reference",
+      "fieldtype": "Link",
+      "label": "Contractor Reference",
+      "options": "Supplier",
+      "reqd": 1
+    },
+    {
+      "fieldname": "start_date",
+      "fieldtype": "Date",
+      "label": "Start Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "end_date",
+      "fieldtype": "Date",
+      "label": "End Date",
+      "reqd": 1
+    },
+    {
+      "fieldname": "contract_value",
+      "fieldtype": "Currency",
+      "label": "Contract Value",
+      "reqd": 1
+    },
+    {
+      "fieldname": "payment_terms",
+      "fieldtype": "Text Editor",
+      "label": "Payment Terms"
+    },
+    {
+      "fieldname": "milestones",
+      "fieldtype": "Table",
+      "label": "Milestones",
+      "options": "Contract Milestone"
+    },
+    {
+      "fieldname": "status",
+      "fieldtype": "Select",
+      "label": "Status",
+      "options": "Draft\nPending\nActive\nOverdue\nCompleted\nExpired\nCancelled",
+      "read_only": 1
+    },
+    {
+      "fieldname": "contractor_signature",
+      "fieldtype": "Signature",
+      "label": "Contractor Signature"
+    },
+    {
+      "fieldname": "client_signature",
+      "fieldtype": "Signature",
+      "label": "Client Signature"
+    },
+    {
+      "fieldname": "signature_date",
+      "fieldtype": "Date",
+      "label": "Signature Date"
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "links": [],
+  "modified": "2023-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Construction Contract Management",
+  "name": "Construction Contract",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Projects Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}

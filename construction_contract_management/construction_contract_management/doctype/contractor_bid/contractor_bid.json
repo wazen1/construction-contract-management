@@ -1,0 +1,98 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2023-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": [
+    "bidder",
+    "tender_reference",
+    "bid_amount",
+    "technical_proposal",
+    "financial_proposal",
+    "boq_price_breakdown",
+    "workflow_state"
+  ],
+  "fields": [
+    {
+      "fieldname": "bidder",
+      "fieldtype": "Link",
+      "label": "Bidder Information",
+      "options": "Supplier",
+      "reqd": 1
+    },
+    {
+      "fieldname": "tender_reference",
+      "fieldtype": "Link",
+      "label": "Tender Reference",
+      "options": "Project Tender",
+      "reqd": 1
+    },
+    {
+      "fieldname": "bid_amount",
+      "fieldtype": "Currency",
+      "label": "Bid Amount",
+      "reqd": 1
+    },
+    {
+      "fieldname": "technical_proposal",
+      "fieldtype": "Attach",
+      "label": "Technical Proposal"
+    },
+    {
+      "fieldname": "financial_proposal",
+      "fieldtype": "Attach",
+      "label": "Financial Proposal"
+    },
+    {
+      "fieldname": "boq_price_breakdown",
+      "fieldtype": "Table",
+      "label": "BoQ Price Breakdown",
+      "options": "Bid BoQ Item"
+    },
+    {
+      "fieldname": "workflow_state",
+      "fieldtype": "Data",
+      "label": "Workflow State",
+      "read_only": 1
+    }
+  ],
+  "index_web_pages_for_search": 1,
+  "is_submittable": 1,
+  "links": [],
+  "modified": "2023-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Construction Contract Management",
+  "name": "Contractor Bid",
+  "owner": "Administrator",
+  "permissions": [
+    {
+      "create": 1,
+      "delete": 1,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "System Manager",
+      "share": 1,
+      "write": 1
+    },
+    {
+      "create": 1,
+      "delete": 0,
+      "email": 1,
+      "export": 1,
+      "print": 1,
+      "read": 1,
+      "report": 1,
+      "role": "Projects Manager",
+      "share": 1,
+      "write": 1
+    }
+  ],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}

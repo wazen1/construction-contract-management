@@ -1,0 +1,29 @@
+{
+  "actions": [],
+  "allow_rename": 1,
+  "creation": "2023-01-01 00:00:00.000000",
+  "doctype": "DocType",
+  "editable_grid": 1,
+  "engine": "InnoDB",
+  "field_order": ["tender"],
+  "fields": [
+    {
+      "fieldname": "tender",
+      "fieldtype": "Link",
+      "label": "Tender",
+      "options": "Project Tender",
+      "reqd": 1
+    }
+  ],
+  "istable": 1,
+  "links": [],
+  "modified": "2023-01-01 00:00:00.000000",
+  "modified_by": "Administrator",
+  "module": "Construction Contract Management",
+  "name": "Project Tender Link",
+  "owner": "Administrator",
+  "permissions": [],
+  "sort_field": "modified",
+  "sort_order": "DESC",
+  "track_changes": 1
+}
