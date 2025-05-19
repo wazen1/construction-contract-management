@@ -1,0 +1,11 @@
+{
+    "name": "construction_contract_management",
+    "title": "Construction Contract Management",
+    "description": "ERPNext Custom Application for Construction Contract Management",
+    "publisher": "Manus",
+    "email": "user@example.com",
+    "repo_url": "",
+    "version": "0.0.1",
+    "color": "grey",
+    "icon": "octicon octicon-file-directory"
+}

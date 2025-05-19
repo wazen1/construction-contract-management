@@ -1,0 +1,143 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:contract_number",
+ "creation": "2023-05-17 15:11:10.000000",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "contract_number",
+  "project_reference",
+  "contractor_reference",
+  "dates_section",
+  "start_date",
+  "end_date",
+  "financial_section",
+  "contract_value",
+  "payment_terms",
+  "milestones_section",
+  "milestones",
+  "signature_section",
+  "customer_signature",
+  "contractor_signature",
+  "signature_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "contract_number",
+   "fieldtype": "Data",
+   "label": "Contract Number",
+   "unique": 1,
+   "reqd": 1,
+   "read_only": 1,
+   "default": "New Contract"
+  },
+  {
+   "fieldname": "project_reference",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Project Reference",
+   "options": "Project",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contractor_reference",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Contractor Reference",
+   "options": "Supplier",
+   "reqd": 1
+  },
+  {
+   "fieldname": "dates_section",
+   "fieldtype": "Section Break",
+   "label": "Contract Dates"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Start Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "End Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "financial_section",
+   "fieldtype": "Section Break",
+   "label": "Financial Details"
+  },
+  {
+   "fieldname": "contract_value",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Contract Value",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_terms",
+   "fieldtype": "Text Editor",
+   "label": "Payment Terms"
+  },
+  {
+   "fieldname": "milestones_section",
+   "fieldtype": "Section Break",
+   "label": "Milestones"
+  },
+  {
+   "fieldname": "milestones",
+   "fieldtype": "Table",
+   "label": "Milestones",
+   "options": "Contract Milestone"
+  },
+  {
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "Digital Signatures"
+  },
+  {
+   "fieldname": "customer_signature",
+   "fieldtype": "Signature",
+   "label": "Customer Signature"
+  },
+  {
+   "fieldname": "contractor_signature",
+   "fieldtype": "Signature",
+   "label": "Contractor Signature"
+  },
+  {
+   "fieldname": "signature_date",
+   "fieldtype": "Date",
+   "label": "Signature Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-05-17 15:11:10.000000",
+ "modified_by": "Administrator",
+ "module": "Construction Contract Management",
+ "name": "Construction Contract",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
