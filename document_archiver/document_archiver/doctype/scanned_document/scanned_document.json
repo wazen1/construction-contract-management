@@ -1,0 +1,140 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:scanner_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scanner_info",
+  "scanner_name",
+  "scanner_type",
+  "scan_date",
+  "scan_time",
+  "file_details",
+  "file_attachment",
+  "file_size",
+  "file_type",
+  "scan_quality",
+  "resolution",
+  "color_mode",
+  "processing",
+  "ocr_text",
+  "processing_status",
+  "notes"
+ ],
+ "fields": [
+  {
+   "fieldname": "scanner_info",
+   "fieldtype": "Section Break",
+   "label": "Scanner Information"
+  },
+  {
+   "fieldname": "scanner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Scanner Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scanner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Scanner Type",
+   "options": "Webcam\nTWAIN\nSANE\nMobile App\nFile Upload",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scan_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Scan Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scan_time",
+   "fieldtype": "Time",
+   "label": "Scan Time"
+  },
+  {
+   "fieldname": "file_details",
+   "fieldtype": "Section Break",
+   "label": "File Details"
+  },
+  {
+   "fieldname": "file_attachment",
+   "fieldtype": "Attach",
+   "in_list_view": 1,
+   "label": "Scanned File",
+   "reqd": 1
+  },
+  {
+   "fieldname": "file_size",
+   "fieldtype": "Int",
+   "label": "File Size (bytes)",
+   "read_only": 1
+  },
+  {
+   "fieldname": "file_type",
+   "fieldtype": "Data",
+   "label": "File Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "scan_quality",
+   "fieldtype": "Select",
+   "label": "Scan Quality",
+   "options": "Draft\nNormal\nHigh\nMaximum"
+  },
+  {
+   "fieldname": "resolution",
+   "fieldtype": "Data",
+   "label": "Resolution (DPI)"
+  },
+  {
+   "fieldname": "color_mode",
+   "fieldtype": "Select",
+   "label": "Color Mode",
+   "options": "Black & White\nGrayscale\nColor"
+  },
+  {
+   "fieldname": "processing",
+   "fieldtype": "Section Break",
+   "label": "Processing"
+  },
+  {
+   "fieldname": "ocr_text",
+   "fieldtype": "Long Text",
+   "label": "Extracted Text (OCR)"
+  },
+  {
+   "fieldname": "processing_status",
+   "fieldtype": "Select",
+   "label": "Processing Status",
+   "options": "Pending\nProcessing\nCompleted\nFailed",
+   "default": "Pending"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Text",
+   "label": "Notes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_child_table": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Document Archiver",
+ "name": "Scanned Document",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 0,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

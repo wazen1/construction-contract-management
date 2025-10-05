@@ -1,0 +1,201 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:scanner_name",
+ "creation": "2024-01-01 00:00:00.000000",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "scanner_info",
+  "scanner_name",
+  "scanner_type",
+  "is_active",
+  "connection_settings",
+  "device_id",
+  "device_name",
+  "driver_path",
+  "connection_string",
+  "scan_settings",
+  "default_resolution",
+  "default_color_mode",
+  "default_quality",
+  "auto_crop",
+  "auto_rotate",
+  "auto_deskew",
+  "advanced_settings",
+  "tesseract_path",
+  "language",
+  "custom_config",
+  "api_settings",
+  "api_endpoint",
+  "api_key",
+  "webhook_url"
+ ],
+ "fields": [
+  {
+   "fieldname": "scanner_info",
+   "fieldtype": "Section Break",
+   "label": "Scanner Information"
+  },
+  {
+   "fieldname": "scanner_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Scanner Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "scanner_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Scanner Type",
+   "options": "Webcam\nTWAIN\nSANE\nMobile App\nAPI Scanner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "is_active",
+   "fieldtype": "Check",
+   "label": "Is Active",
+   "default": 1
+  },
+  {
+   "fieldname": "connection_settings",
+   "fieldtype": "Section Break",
+   "label": "Connection Settings"
+  },
+  {
+   "fieldname": "device_id",
+   "fieldtype": "Data",
+   "label": "Device ID"
+  },
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "Device Name"
+  },
+  {
+   "fieldname": "driver_path",
+   "fieldtype": "Data",
+   "label": "Driver Path"
+  },
+  {
+   "fieldname": "connection_string",
+   "fieldtype": "Small Text",
+   "label": "Connection String"
+  },
+  {
+   "fieldname": "scan_settings",
+   "fieldtype": "Section Break",
+   "label": "Default Scan Settings"
+  },
+  {
+   "fieldname": "default_resolution",
+   "fieldtype": "Int",
+   "label": "Default Resolution (DPI)",
+   "default": 300
+  },
+  {
+   "fieldname": "default_color_mode",
+   "fieldtype": "Select",
+   "label": "Default Color Mode",
+   "options": "Black & White\nGrayscale\nColor",
+   "default": "Color"
+  },
+  {
+   "fieldname": "default_quality",
+   "fieldtype": "Select",
+   "label": "Default Quality",
+   "options": "Draft\nNormal\nHigh\nMaximum",
+   "default": "High"
+  },
+  {
+   "fieldname": "auto_crop",
+   "fieldtype": "Check",
+   "label": "Auto Crop",
+   "default": 1
+  },
+  {
+   "fieldname": "auto_rotate",
+   "fieldtype": "Check",
+   "label": "Auto Rotate",
+   "default": 1
+  },
+  {
+   "fieldname": "auto_deskew",
+   "fieldtype": "Check",
+   "label": "Auto Deskew",
+   "default": 1
+  },
+  {
+   "fieldname": "advanced_settings",
+   "fieldtype": "Section Break",
+   "label": "Advanced Settings"
+  },
+  {
+   "fieldname": "tesseract_path",
+   "fieldtype": "Data",
+   "label": "Tesseract Path"
+  },
+  {
+   "fieldname": "language",
+   "fieldtype": "Data",
+   "label": "OCR Language",
+   "default": "eng"
+  },
+  {
+   "fieldname": "custom_config",
+   "fieldtype": "Code",
+   "label": "Custom Configuration",
+   "options": "JSON"
+  },
+  {
+   "fieldname": "api_settings",
+   "fieldtype": "Section Break",
+   "label": "API Settings"
+  },
+  {
+   "fieldname": "api_endpoint",
+   "fieldtype": "Data",
+   "label": "API Endpoint"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Password",
+   "label": "API Key"
+  },
+  {
+   "fieldname": "webhook_url",
+   "fieldtype": "Data",
+   "label": "Webhook URL"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-01 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Document Archiver",
+ "name": "Scanner Config",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
