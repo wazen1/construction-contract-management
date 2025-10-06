@@ -1,0 +1,7 @@
+frappe
+Pillow>=8.0.0
+python-tesseract>=0.3.8
+opencv-python>=4.5.0
+numpy>=1.19.0
+pdf2image>=1.16.0
+pytesseract>=0.3.8
